@@ -1,0 +1,245 @@
+﻿<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:annotation>
+    <xsd:documentation xml:lang="pl">
+      XML Schema do pliku zamowienia.
+    </xsd:documentation>
+  </xsd:annotation>
+  
+  <xsd:element name="Projekt" type="main"/>
+  <xsd:element name="Opis" type="description"/>
+  <xsd:element name="Tytuł" type="title"/>
+  
+  <xsd:complexType name="main">
+    <xsd:sequence>
+      <xsd:element ref="Tytuł"/>
+      <xsd:element name="Autor" type="author"/>
+      <xsd:element ref="Opis"/>
+      <xsd:element name="Adres_strony" type="domain"/>
+      <xsd:element name="Ustawienia" type="settings"/>
+      <xsd:element name="Podstrony" type="sites"/>
+      <xsd:element name="Nagłówek" type="header"/>
+      <xsd:element name="Menu" type="menu"/>
+      <xsd:element name="Stopka" type="footer"/>
+      <xsd:element name="tło" type="background"/>
+      <xsd:element name="Data_utworzenia" type="date"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+
+  <xsd:simpleType name="title">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="3"/>
+      <xsd:maxLength value="20"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="author">
+    <xsd:complexContent>
+      <xsd:extension base="Adres">
+        <xsd:sequence>
+          <xsd:element name="osoba" type="person"/>
+        </xsd:sequence>
+        <xsd:attribute ref="Language"/>
+      </xsd:extension>      
+    </xsd:complexContent>    
+  </xsd:complexType>
+      
+    
+  
+  
+  <xsd:complexType name="Adres">
+    <xsd:sequence>
+      <xsd:element name="ulica" type="xsd:string"/>
+      <xsd:element name="kod" type="city_code"/>
+      <xsd:element name="miasto" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+  <xsd:attribute name="Language">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:pattern value="[A-Z][A-Z]"/>
+      </xsd:restriction>
+    </xsd:simpleType>            
+  </xsd:attribute>
+  
+  <xsd:complexType name="person">
+    <xsd:sequence>
+      <xsd:element name="Imie" type="xsd:string"/>
+      <xsd:element name="Nazwisko" type="xsd:string"/>
+      <xsd:element name="Data_narodzin" type="date"/>
+    </xsd:sequence>
+    <xsd:attribute name="miejsce_narodzin" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:simpleType name="city_code">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{2}-\d{3}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="description">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="3"/>
+      <xsd:maxLength value="150"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="domain">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="www.[a-z]{2,}.[a-z]{2,}"/>
+    </xsd:restriction>
+    
+  </xsd:simpleType>
+
+  <xsd:complexType name="settings">
+    <xsd:sequence>
+      <xsd:element name="CSS_version">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:nonNegativeInteger">
+            <xsd:minInclusive value="1" />
+            <xsd:maxInclusive value="3" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="HTML_version" type="xsd:nonNegativeInteger"/>
+    </xsd:sequence>
+    <xsd:attribute name="last_update" type="date" default="10-10-2016"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="site_content" mixed="true">
+    <xsd:sequence>
+      <xsd:element ref="Opis" minOccurs="0"/>
+      <xsd:element name="Czcionka" type="font-style"/>
+      <xsd:element name="Rozdział" type="text_content" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="Obraz" minOccurs="0" maxOccurs="unbounded">        
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="URL" type="xsd:string"/>
+            <xsd:element name="Opis" type="description"/>            
+          </xsd:sequence>
+        </xsd:complexType>        
+      </xsd:element>      
+      <xsd:element name="Link" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="URL" type="xsd:string"/>
+            <xsd:element name="Opis" type="description"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>      
+      <xsd:element name="Tabela" minOccurs="0">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="wiersz" minOccurs="1" maxOccurs="unbounded">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:element name="kolumna" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+                <xsd:attribute name="border" type="xsd:boolean" default="true"/>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+          <xsd:attribute name="border" type="xsd:boolean" default="true"/>
+        </xsd:complexType>
+      </xsd:element>     
+    </xsd:sequence>
+  
+</xsd:complexType>
+
+  <xsd:complexType name="sites">
+    <xsd:sequence>
+      <xsd:element name="site" minOccurs="1" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element ref="Tytuł"/>
+            <xsd:element ref="Opis"/>
+            <xsd:element name="Adres_strony" type="xsd:string"/>
+            <xsd:element name="Zawartosc" type="site_content"/>
+          </xsd:sequence>
+          <xsd:attribute name="Aktwyna" type="xsd:boolean" default="true"/>
+          <xsd:attribute ref="Language"/>        
+        </xsd:complexType>        
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="table">
+    <xsd:sequence>
+      <xsd:element name="wiersz" minOccurs="1" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="kolumna" minOccurs="1" maxOccurs="unbounded"/>          
+          </xsd:sequence>
+          <xsd:attribute name="border" type="xsd:boolean" default="true"/>
+        </xsd:complexType>
+      </xsd:element>      
+    </xsd:sequence>
+    <xsd:attribute name="border" type="xsd:boolean" default="true"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="header">
+    <xsd:sequence>
+      <xsd:group ref="Cechy_elementów"/>
+      <xsd:element name="Graphics" />
+      <xsd:element name="Animation"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="text_content">
+    <xsd:all minOccurs="0">
+      <xsd:element name="Naglowek" type="description"/>
+      <xsd:element name="Tresc" type="xsd:string"/>
+    </xsd:all>
+  </xsd:complexType>
+
+  
+
+  <xsd:complexType name="menu">
+    <xsd:sequence>
+      <xsd:element ref="Tytuł" minOccurs="1" maxOccurs="unbounded"/>
+      <xsd:element name="Czcionka" type="font-style"/>
+    </xsd:sequence>
+    
+  </xsd:complexType>
+
+  <xsd:complexType name="footer">
+    <xsd:sequence>
+      <xsd:group ref="Cechy_elementów"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name="background">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="black"/>
+      <xsd:enumeration value="withe"/>
+      <xsd:enumeration value="gray"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+
+  <xsd:simpleType name="font-style">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Arial"/>
+      <xsd:enumeration value="The News Roman"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+
+  <xsd:simpleType name="date">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{2}-\d{2}-\d{4}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:group name="Cechy_elementów">
+    <xsd:sequence>
+      <xsd:element ref="Opis"/>
+      <xsd:element name="Czcionka" type="font-style"/>
+    </xsd:sequence>
+  </xsd:group>
+
+
+
+</xsd:schema>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Projekt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Tytuł" type="xs:string" />
+        <xs:element name="Autor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ulica" type="xs:string" />
+              <xs:element name="kod" type="xs:string" />
+              <xs:element name="miasto" type="xs:string" />
+              <xs:element name="osoba">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Imie" type="xs:string" />
+                    <xs:element name="Nazwisko" type="xs:string" />
+                    <xs:element name="Data_narodzin" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Language" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Opis" type="xs:string" />
+        <xs:element name="Adres_strony" type="xs:string" />
+        <xs:element name="Ustawienia">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CSS_version" type="xs:unsignedByte" />
+              <xs:element name="HTML_version" type="xs:unsignedByte" />
+            </xs:sequence>
+            <xs:attribute name="last_update" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Podstrony">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="site">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Tytuł" type="xs:string" />
+                    <xs:element name="Opis" type="xs:string" />
+                    <xs:element name="Adres_strony" type="xs:string" />
+                    <xs:element name="Zawartosc">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Czcionka" type="xs:string" />
+                          <xs:element name="Naglowek" type="xs:string" />
+                          <xs:element minOccurs="0" name="Opis" type="xs:string" />
+                          <xs:element name="Tresc" type="xs:string" />
+                          <xs:element name="Obraz">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="URL" type="xs:string" />
+                                <xs:element name="Opis" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Nagłówek">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Opis" type="xs:string" />
+              <xs:element name="Czcionka" type="xs:string" />
+              <xs:element name="Graphics" type="xs:string" />
+              <xs:element name="Animation" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Menu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Tytuł" type="xs:string" />
+              <xs:element name="Czcionka" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Stopka">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Opis" type="xs:string" />
+              <xs:element name="Czcionka" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tło" type="xs:string" />
+        <xs:element name="Data_utworzenia" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

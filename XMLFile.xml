@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Projekt>
+  <Tytuł>Simson Informacje</Tytuł>
+
+  <Autor Language="PL">
+    <ulica>Żwirki i Wigury</ulica>
+    <kod>80-861</kod>
+    <miasto>Gdansk</miasto>
+    <osoba>
+      <Imie>Mateusz</Imie>
+      <Nazwisko>Krawczyk</Nazwisko>
+      <Data_narodzin>18-01-1994</Data_narodzin>
+    </osoba>
+  </Autor>
+
+  <Opis>Strona poświęcona simsonom</Opis>
+
+  <Adres_strony>www.simson.pl</Adres_strony>
+
+  <Ustawienia last_update="11-10-1016">
+    <CSS_version>2</CSS_version>
+    <HTML_version>5</HTML_version>
+  </Ustawienia>
+
+  <Podstrony>
+    <site>
+      <Tytuł>Strona Glowna</Tytuł>
+      <Opis>Ogolne wiadomosci o stronie</Opis>
+      <Adres_strony>www.simson.pl/index.html</Adres_strony>
+      <Zawartosc>
+        <Czcionka>The News Roman</Czcionka>
+        <Rozdział>
+          <Naglowek>Witaj na stronie o simsonach</Naglowek>
+          <Tresc>
+            Simson – były niemiecki producent motocykli i motorowerów. Działalność firmy rozpoczęli bracia Simson w roku 1856 od produkcji broni. Dziś z ich nazwiskiem głównie są kojarzone motorowery, które zyskały dużą popularność w Niemczech wschodnich (DDR), Polsce oraz innych krajach sąsiednich, zwłaszcza w krajach bloku wschodniego. Najbardziej popularnymi w Polsce są modele Simson S51 oraz skuter Simson SR50. Sukcesy na rynku polskim przypadają na przełom lat 80. i 90. W tym też okresie (lata 1988–1989) fabryka w Suhl wyprodukowała najwięcej jednośladów. Do dziś motorowery Simson, choć w większości liczą ponad 20 lat, wciąż cieszą się uznaniem, ze względu na dużą bezawaryjność, ale także łatwy dostęp do części zamiennych, jak również prostotę naprawy. Jesienią roku 2002, po wielu latach niepowodzeń w odmienionej gospodarczo i politycznie nowej rzeczywistości rynkowej (transformacja ustrojowa), produkcja została ostatecznie wstrzymana. Upadłość zakładów ogłoszono 1 lutego 2003.
+          </Tresc>
+        </Rozdział>
+        <Obraz>
+          <URL>Simson-S51-green.bmp</URL>
+          <Opis>Zdjęcie simsona</Opis>
+        </Obraz>
+      </Zawartosc>
+    </site>
+    <site>
+      <Tytuł>Historia simsonów</Tytuł>
+      <Opis>Historia firmy i marki simsonów</Opis>
+      <Adres_strony>www.simson.pl/history.html</Adres_strony>
+      <Zawartosc>
+        <Czcionka>The News Roman</Czcionka>
+        <Rozdział>
+          <Naglowek>Historia produkcji simsonów</Naglowek>
+          <Tresc>
+            Pierwszym motorowerem produkowanym w Suhl od 1956 roku był Simson SR1 od 1958 roku zastąpiony przez model SR2. Motorowery te cieszyły się znaczną popularnością także w Polsce. W latach 60. konstruowano kolejne modele, m.in. SR4-1 „Spatz”, SR4-2 „Star”, SR4-3 „Sperber”, SR4-4 „Habicht”, a także skuter KR51 „Schwalbe” wyposażone w odmiany silnika spalinowego typu M50 o mocy zależnie od odmiany od 2,6 KM do 4,6 KM (model SR4-3) i 2, 3 lub 4 biegach. Produkowano także model sportowy GS-50, który odnosił pod koniec lat 60. XX wieku znaczące sukcesy w rajdach motocyklowych. Z wykorzystaniem silników i zespołów motorowerów Simson produkowano w DDR także trójkołowe pojazdy inwalidzkie: Piccolo i Piccolo-DUO oraz ciągniczki rolnicze Fortschritt E930/E931.50. Kolejne modele Simsonów odchodziły coraz dalej od pierwotnych założeń konstrukcyjnych motoroweru jako maksymalnie uproszczonego jednośladu z silnikiem spalinowym. Ukoronowaniem tej tendencji był produkowany od 1975 roku model S50 wyposażony w silnik M53/2-KF i motocyklowy widelec teleskopowy z hydraulicznym ogranicznikiem skoku, nową jednorurową ramę grzbietową o konstrukcji modularnej, częściowo opartej na ramach produkowanych modeli sportowych. Dostępna była także wersja motoroweru wyposażona w zapłon elektroniczny. Kolejnym znaczącym krokiem w rozwoju motorowerów Simson było skonstruowanie w 1980 roku modelu S51 wyposażonego w zupełnie nowy silnik, ze skrzynią biegów o 4 przełożeniach, w której nowością było zastosowanie stale zazębionych kół i zmiany przełożeń przy pomocy tzw. „przesuwnego wpustu”. W sprzęgle zastosowano centralnie działającą sprężynę płytkową. W silnikach tych przewidziano zmianę pojemności skokowej do 70 cm³ przez wymianę niewielu elementów, w związku z czym zmniejszono w nich względem poprzedniego modelu średnicę cylindra. W silniki te wyposażone zostały także skutery nowej konstrukcji SR50 i SR80. Cieszyły się dużą popularnością, gdyż nowoczesne nadwozie skutera sprawiało wygodę podczas jazdy nawet w czasie deszczu poprzez osłony na nogi. W 1990 roku wprowadzono model S53. Pod koniec pierwszej połowy lat 90. powrócono do nazewnictwa modeli gatunkami ptaków, dokonano modernizacji modeli S53 oraz SR50, wprowadzono do produkcji nowe pojazdy, m.in. skutery z automatyczną skrzynią biegów Star 25/50/100, motorynki Spatz 25/50, pojazdy trójkołowe Albatros. W drugiej połowie lat 90. wznowiono produkcję motocykli o pojemności 125 cm³, wprowadzono model MS 50 Sperber z ulepszonym silnikiem M554 i dozownikiem oleju. Firma Simson we współpracy z tajwańską firmą Her Chee sprzedawała niewielką liczbę tajwańskich pojazdów pod nazwą Simson Sula. Ostatni rok działalności firmy przyniósł modele GS 50 i SM 50 będące włoskimi pojazdami typu Enduro i Supermoto oraz modele TS.025/.050/0.080 i SC.025/.050/0.080, które były wersjami S53 z zastosowaniem kilku nowych podzespołów produkcji włoskiej. Spółka Simson ogłosiła bankructwo 28 czerwca 2002 roku. W 2003 roku przejęła ją spółka MZA Meyer Zweiradtechnik Ahnatal GmbH. Dzięki staraniom firmy, sprzedaż i produkcja części zamiennych doprowadziła do popularyzacji marki Simson i wznowienia jednostkowej produkcji pojazdów lub ich odnawiania, a także w 2009 roku do wznowienia produkcji seryjnej silników spalinowych typu M541. W Niemczech wciąż odbywają się wyścigi oraz zloty Simsonów.
+          </Tresc>
+        </Rozdział>
+        <Rozdział>
+          <Naglowek>Simson S-51</Naglowek>
+          <Tresc>
+            Nowo wprowadzony model S51 niewiele różnił się od starszego S50. Największą różnicą było wprowadzenie zmodernizowanego silnika M531 i M541, którego jednocześnie zastosowano w modelu KR51/2. W nowej jednostce napędowej dokonano szeregu zmian, które miały na celu zmniejszenie zużycia paliwa, znaczne ułatwienie napraw oraz zredukować częstą obsługę silnika. Wprowadzono nowy cylinder z tłokiem o mniejszej średnicy i wał korbowy o zwiększonym skoku tłoka. Łożyska wału korbowego są smarowane mieszanką paliwa z olejem, podczas gdy w starym silniku były smarowane olejem przekładniowym, gdzie takie rozwiązanie sprawiało problemy podczas napraw silnika. Zastosowano nowe rozwiązanie sprzęgła ze sprężyną centralną, dzięki czemu sprzęgło stało się prawie całkowicie bezobsługowe. Nowe rozwiązanie nożnego rozrusznika umożliwiało dokonywanie napraw bez konieczności całkowitego rozebrania silnika, co było poważnym problem w silnikach serii M53. Najważniejszą cechą silnika było zastąpienie 3-biegowej skrzyni przekładniowej z kołami przesuwnymi nową skrzynią trzy- lub czterobiegową z kołami stale zazębionymi i zmianą biegów za pomocą tzw. klina przesuwnego. Rozwiązanie takie było znane m.in. z włoskiej Vespy. W Simsonie rozwiązanie to ma charakter sprzęgła kulkowego, gdzie znajdujący się wewnątrz wałka skrzyni biegów pręt wybierający powoduje wysunięcie kulek poza obrys zewnętrzny wałka i tym samym sprzęgnięcie wałka z kołem zębatym. Zmieniono także napęd licznika, uszczelniono wałek nożnego rozrusznika i przede wszystkim wygląd nowego silnika. Modernizacja silnika pozwoliła także na zredukowanie ilości oleju przekładniowego, którego w nowym silniku znajduje się 400 ml. Projektując nowy silnik przewidziano także możliwość zwiększenia pojemności do 70 cm³ przy zmianie kilku podzespołów. Dało to początek modelowi S70, który miał konkurować na rynku z pojazdami klasy 80 cm³. Nadwozie pozostało niemal takie same co w S50, zachowując zmiany wprowadzone w ostatnich modelach S50, czyli m.in. nowy zbiornik paliwa oraz widelec teleskopowy z krótszymi sprężynami. Ze względu na zmiany wprowadzone w jednostce napędowej występowały niewielkie różnice, głównie łańcuch krótszy o dwa ogniwa oraz inną linkę sprzęgła. Jednocześnie unifikacja części pozwala wymianę silnika w starszym S50 na nowy silnik z modelu S51.
+          </Tresc>
+        </Rozdział>
+        <Obraz>
+          <URL>Simson_S50_B2_Bj77.bmp</URL>
+          <Opis>Simson S51</Opis>
+        </Obraz>
+        <Obraz>
+          <URL>Simson_SR50-1_Baujahr_1995_für_Postdienst_Seitenansicht.bmp</URL>
+          <Opis>Simson SR</Opis>
+        </Obraz>
+        <Obraz>
+          <URL>Simson_schwalbe.bmp</URL>
+          <Opis>Simson Schwalbe</Opis>
+        </Obraz>
+        <Obraz>
+          <URL>Simson_S53_OR.bmp</URL>
+          <Opis>Simson S53</Opis>
+        </Obraz>
+        <Link>
+          <URL>
+            https://pl.wikipedia.org/wiki/Simson
+          </URL>
+          <Opis>
+            Wikipedia - Simson
+          </Opis>
+        </Link>
+        <Link>
+          <URL>
+            https://pl.wikipedia.org/wiki/Simson_S51
+          </URL>
+          <Opis>
+            Wikipedia - Simson S51
+          </Opis>
+        </Link>
+        <Tabela>
+          <wiersz>
+            <kolumna>
+              •1856. Bracia Simson w Suhl rozpoczynają produkcję broni białej i palnej.
+            </kolumna>
+          </wiersz>
+          <wiersz>
+            <kolumna>
+              •1896. Rozpoczęto produkcję rowerów.
+            </kolumna>
+          </wiersz>
+          <wiersz>
+            <kolumna>
+              •1908. Zmontowano pierwszy samochód osobowy; zatrudnienie – 1,5 tys. pracowników.
+            </kolumna>
+          </wiersz>
+          <wiersz>
+            <kolumna>
+              •1930-34. Produkcja samochodów.
+            </kolumna>
+          </wiersz>
+          <wiersz>
+            <kolumna>
+              •1934. Bracia Simson zostają wywłaszczeni przez rząd Hitlera. Powstaje Berlińsko-Suhlerska Fabryka Broni i Maszyn (BSW), w skład której wchodzą zakłady Simsonów.
+            </kolumna>
+          </wiersz>
+          <wiersz>
+            <kolumna>
+              •1936. Zostaje wyprodukowany pierwszy dwukołowy rower silnikowy – BSW 100.
+            </kolumna>
+          </wiersz>
+          <wiersz>
+            <kolumna>
+              •1939-45. Wytwarzanie broni dla armii niemieckiej.
+            </kolumna>
+          </wiersz>
+          <wiersz>
+            <kolumna>
+              •1945. Demontaż maszyn i wyposażenia, częściowe zniszczenie fabryki.
+            </kolumna>
+          </wiersz>
+          <wiersz>
+            <kolumna>
+              1856. Bracia Simson w Suhl rozpoczynają produkcję broni białej i palnej.
+            </kolumna>
+          </wiersz>
+        </Tabela>
+      </Zawartosc>
+    </site>
+
+  </Podstrony>
+  <Nagłówek>
+    <Opis>Poruszający się w poziomie okrąg</Opis>
+    <Czcionka>Arial</Czcionka>
+    <Graphics>Kółko 40px</Graphics>
+    <Animation>Oscylacje poziome</Animation>
+  </Nagłówek>
+  <Menu>
+    <Tytuł>Strona Główna</Tytuł>
+    <Tytuł>Historia simsonów</Tytuł>
+    <Tytuł>Quiz</Tytuł>
+    <Tytuł>Kontakt</Tytuł>
+    <Czcionka>The News Roman</Czcionka>
+  </Menu>
+  <Stopka>
+    <Opis>Strona stworzona na potrzeby przedmiotu "Wytwarzanie aplikacji internetowych" oraz "Hiperteks i hipermedia". Mateusz Krawczyk</Opis>
+    <Czcionka>Arial</Czcionka>
+  </Stopka>
+  <tło>withe</tło>
+  <Data_utworzenia>10-10-2016</Data_utworzenia>
+</Projekt>
